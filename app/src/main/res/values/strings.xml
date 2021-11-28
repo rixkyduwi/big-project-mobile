@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">garbage_classification</string>
+    <string name="default_web_client_id">coba</string>
+</resources>
