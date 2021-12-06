@@ -22,7 +22,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username: "
+        android:hint=" Username: "
+        android:paddingLeft="9dp"
         android:fontFamily="@font/raleway_regular"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="16dp"

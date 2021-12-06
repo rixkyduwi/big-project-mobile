@@ -1,4 +1,8 @@
 package com.garbage.classification
+import java.io.Serializable
 
-class Modeluser {
-}
+data class Modeluser (
+    val name: String,
+    val norumah : String,
+    val kontak : Int,
+) :Serializable

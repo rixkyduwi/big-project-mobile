@@ -8,35 +8,49 @@
 
     <Button
         android:id="@+id/scan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_rectangle2"
+        android:foregroundTint="@color/black"
+        android:foreground="@drawable/barcode_scanner1"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/chatbot"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/chatbot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_rectangle2"
+        android:foregroundTint="@color/black"
+        android:foreground="@drawable/chat1"
+        android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/wikipedia"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@color/main"
+        android:background="@drawable/btn_rectangle2"
         android:foregroundTint="@color/black"
         android:foreground="@drawable/wikipedia"
+        android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/chatbot"
         app:layout_constraintTop_toButtonOf="@id/scan" />
 
-
-
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trash1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scan"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
