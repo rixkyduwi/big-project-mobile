@@ -1,26 +1,30 @@
 package com.garbage.classification
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.menu.*
 
-class menu : AppCompatActivity() {
+class Menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu)
 
         scan.setOnClickListener {
-            startActivity(Intent(this, com.garbage.classification.kalkulator::class.java))
+            startActivity(Intent(this, com.garbage.classification.Scan::class.java))
             finish()
         }
         chatbot.setOnClickListener {
-            startActivity(Intent(this, com.example.cobacoba.my_profile::class.java))
+            startActivity(Intent(this, com.garbage.classification.Chatbot::class.java))
             finish()
         }
         wikipedia.setOnClickListener {
-            startActivity(Intent(this, com.example.cobacoba.project::class.java))
-            finish()
+                intent = Intent(Intent.ACTION_VIEW)
+                intent.setData(Uri.parse("https://id.wikipedia.org/wiki/Sampah" ))
+                startActivity(intent)
+                finish()
+
         }
     }
 }

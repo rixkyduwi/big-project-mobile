@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Garbage_classification">
         <activity
-            android:name="com.garbage.classification.MainActivity"
+            android:name="com.garbage.classification.Scan"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

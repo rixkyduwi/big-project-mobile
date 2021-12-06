@@ -8,12 +8,8 @@
     android:foreground="@drawable/litering3"
     android:foregroundGravity="bottom"
     android:foregroundTintMode="multiply"
-
     >
-
-
     <TextView
-        android:id="@+id/textView"
         android:layout_width="158dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="350px"
@@ -27,11 +23,8 @@
         tools:layout_editor_absoluteY="203dp"
         android:layout_marginBottom="36dp"
         />
-
-
-
-
     <EditText
+        android:id="@+id/etuser"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="  UserName "
@@ -42,6 +35,7 @@
         android:layout_marginBottom="20dp"/>
 
     <EditText
+        android:id="@+id/etpswd"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="  Password "
@@ -53,6 +47,7 @@
 
 
     <EditText
+        android:id="@+id/etname"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="  Nama Lengkap "
@@ -63,6 +58,7 @@
         android:layout_marginBottom="20dp"/>
 
     <EditText
+        android:id="@+id/etnorumah"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="  No Rumah "
@@ -73,6 +69,7 @@
         android:layout_marginBottom="20dp"/>
 
     <EditText
+        android:id="@+id/etkontak"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:hint="  No Hp "
@@ -82,10 +79,11 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"/>
 
-    <EditText
+    <Button
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="       Register"
+        android:hint="Register"
         android:textStyle="bold"
         android:fontFamily="@font/raleway_regular"
         android:background="@drawable/rectangle"
