@@ -42,8 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chatbot"
-        app:layout_constraintTop_toButtonOf="@id/scan" />
+        app:layout_constraintTop_toBottomOf="@+id/chatbot"/>
 
     <ImageView
         android:layout_width="match_parent"

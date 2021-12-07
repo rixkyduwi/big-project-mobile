@@ -21,28 +21,34 @@
     android:layout_marginBottom="40dp"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint=" Username: "
-        android:paddingLeft="9dp"
+        android:layout_height="50dp"
+        android:hint="Username : "
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
         android:fontFamily="@font/raleway_regular"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/btn_rectangle2"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="6dp"
         android:layout_marginBottom="19dp"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password: "
+        android:layout_height="50dp"
+        android:hint="Password : "
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
         android:fontFamily="@font/raleway_regular"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="6dp"
         android:layout_marginBottom="20dp"/>
     <TextView
+        android:id="@+id/linkdaftar"
+        android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="daftar?"
+        android:textSize="20dp"
         android:textColor="#219305"
         android:fontFamily="@font/raleway_regular"
         android:layout_marginLeft="24dp"
@@ -51,8 +57,10 @@
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login in"
-        android:fontFamily="@font/raleway_light"
+        android:text="login"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:fontFamily="@font/raleway_semibold"
         android:layout_gravity="center"
         android:background="@drawable/btn_rectangle"
         />

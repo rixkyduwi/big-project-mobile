@@ -10,6 +10,12 @@ class Menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu)
+        //actionbar
+        val actionbar = supportActionBar
+        //set actionbar title
+        actionbar!!.title = "   Username"
+
+        actionbar.setDisplayHomeAsUpEnabled(true)
 
         scan.setOnClickListener {
             startActivity(Intent(this, com.garbage.classification.Scan::class.java))

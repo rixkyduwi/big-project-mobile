@@ -1,14 +1,13 @@
 package com.garbage.classification
 
 import android.os.Bundle
-import com.garbage.classification.chatbot.*
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.tdsoft.chatbotapp.APIService
-import com.tdsoft.chatbotapp.AdapterChatBot
-import com.tdsoft.chatbotapp.ChatModel
-import com.tdsoft.chatbotapp.ChatResponse
+import ccom.garbage.classification.modelchatbot.APIService
+import ccom.garbage.classification.modelchatbot.ChatResponse
+import com.garbage.classification.modelchatbot.AdapterChatBot
+import com.garbage.classification.modelchatbot.ChatModel
 import kotlinx.android.synthetic.main.chatbot.*
 import retrofit2.Call
 import retrofit2.Callback

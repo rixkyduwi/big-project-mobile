@@ -1,9 +1,10 @@
-package com.tdsoft.chatbotapp
+package com.garbage.classification.modelchatbot
 
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.garbage.classification.R
 import kotlinx.android.synthetic.main.listitem_chat.view.*
 
 class AdapterChatBot : RecyclerView.Adapter<AdapterChatBot.MyViewHolder>() {
