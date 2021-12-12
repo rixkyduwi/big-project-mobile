@@ -22,7 +22,6 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import java.io.File
 
-
 class Scan : AppCompatActivity() {
     //Our variables
     private var mImageView: ImageView? = null
@@ -33,8 +32,6 @@ class Scan : AppCompatActivity() {
     //Our constants
     private val OPERATION_CAPTURE_PHOTO = 1
     private val OPERATION_CHOOSE_PHOTO = 2
-
-
     private fun initializeWidgets() {
         btnCapture = findViewById(R.id.btnCapture)
         btnChoose = findViewById(R.id.btnChoose)
@@ -51,7 +48,7 @@ class Scan : AppCompatActivity() {
         }
         capturedImage.createNewFile()
         mUri = if(Build.VERSION.SDK_INT >= 24){
-            FileProvider.getUriForFile(this, "info.camposha.kimagepicker.fileprovider",
+            FileProvider.getUriForFile(this, "com.garbage.classification",
                 capturedImage)
         } else {
             Uri.fromFile(capturedImage)
@@ -78,7 +75,7 @@ class Scan : AppCompatActivity() {
     @SuppressLint("Range")
     private fun getImagePath(uri: Uri?, selection: String?): String {
         var path: String? = null
-        val cursor = contentResolver.query(uri, null, selection, null, null )
+        val cursor = contentResolver.query(uri!!, null, selection, null, null )
         if (cursor != null){
             if (cursor.moveToFirst()) {
                 path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA))
@@ -149,7 +146,7 @@ class Scan : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.scan)
 
         initializeWidgets()
 
@@ -169,4 +166,3 @@ class Scan : AppCompatActivity() {
         }
     }
 }
-//end

@@ -14,8 +14,7 @@ class Splashscreen: AppCompatActivity() {
         val actionbar = supportActionBar
         //set actionbar title
         actionbar!!.title = "   Username"
-
-        actionbar.setDisplayHomeAsUpEnabled(false)
+        actionbar.setDisplayShowTitleEnabled(false)
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(
                 Intent(

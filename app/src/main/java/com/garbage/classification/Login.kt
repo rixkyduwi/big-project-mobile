@@ -13,7 +13,6 @@ class Login : AppCompatActivity() {
         getSupportActionBar()!!.setDisplayShowHomeEnabled(true);
         getSupportActionBar()!!.setLogo(R.drawable.icon);
         getSupportActionBar()!!.setDisplayUseLogoEnabled(true);
-        getSupportActionBar()!!.setBackgroundDrawable(R.drawable.backgroundlogin);
         btn_login.setOnClickListener {
             startActivity(Intent(this, Menu::class.java))
             finish()
