@@ -1,18 +1,19 @@
-package com.codepalace.chatbot.ui
+package com.garbage.ckassification.modelchatbot.ui
 
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.codepalace.chatbot.R
-import com.codepalace.chatbot.data.Message
-import com.codepalace.chatbot.utils.Constants.RECEIVE_ID
-import com.codepalace.chatbot.utils.Constants.SEND_ID
-import com.codepalace.chatbot.utils.BotResponse
-import com.codepalace.chatbot.utils.Constants.OPEN_GOOGLE
-import com.codepalace.chatbot.utils.Constants.OPEN_SEARCH
-import com.codepalace.chatbot.utils.Time
+import com.garbage.ckassification.modelchatbot.data.Message
+import com.garbage.ckassification.modelchatbot.utils.Time
+import com.garbage.ckassification.R
+import com.garbage.ckassification.modelchatbot.utils.BotResponse
+import com.garbage.ckassification.modelchatbot.utils.Constants.OPEN_GOOGLE
+import com.garbage.ckassification.modelchatbot.utils.Constants.OPEN_SEARCH
+import com.garbage.ckassification.modelchatbot.utils.Constants.RECEIVE_ID
+import com.garbage.ckassification.modelchatbot.utils.Constants.SEND_ID
+import com.garbage.ckassification.modelchatbot.utils.MessagingAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.*
 

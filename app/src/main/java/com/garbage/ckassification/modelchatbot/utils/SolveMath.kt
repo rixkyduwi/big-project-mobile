@@ -1,4 +1,4 @@
-package com.codepalace.chatbot.utils
+package com.garbage.ckassification.modelchatbot.utils
 
 import android.util.Log
 

@@ -1,7 +1,7 @@
-package com.codepalace.chatbot.utils
+package com.garbage.ckassification.modelchatbot.utils
 
-import com.codepalace.chatbot.utils.Constants.OPEN_GOOGLE
-import com.codepalace.chatbot.utils.Constants.OPEN_SEARCH
+import com.garbage.ckassification.modelchatbot.utils.Constants.OPEN_SEARCH
+import com.garbage.ckassification.modelchatbot.utils.SolveMath
 import java.sql.Date
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
@@ -11,7 +11,7 @@ object BotResponse {
     fun basicResponses(_message: String): String {
 
         val random = (0..2).random()
-        val message =_message.toLowerCase()
+        val message =_message.lowercase()
 
         return when {
 
@@ -65,12 +65,12 @@ object BotResponse {
 
             //Open Google
             message.contains("open") && message.contains("google")-> {
-                OPEN_GOOGLE
+                Constants.OPEN_GOOGLE
             }
 
             //Search on the internet
             message.contains("search")-> {
-                OPEN_SEARCH
+                Constants.OPEN_SEARCH
             }
 
             //When the programme doesn't understand...

@@ -91,7 +91,7 @@ class Scan : AppCompatActivity() {
         //DocumentsContract defines the contract between a documents provider and the platform.
         if (DocumentsContract.isDocumentUri(this, uri)){
             val docId = DocumentsContract.getDocumentId(uri)
-            if ("com.android.providers.media.documents" == uri.authority){
+            if ("com.android.providers.media.documents" == uri!!.authority){
                 val id = docId.split(":")[1]
                 val selsetion = MediaStore.Images.Media._ID + "=" + id
                 imagePath = getImagePath(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
@@ -103,7 +103,7 @@ class Scan : AppCompatActivity() {
                 imagePath = getImagePath(contentUri, null)
             }
         }
-        else if ("content".equals(uri.scheme, ignoreCase = true)){
+        else if ("content".equals(uri!!.scheme, ignoreCase = true)){
             imagePath = getImagePath(uri, null)
         }
         else if ("file".equals(uri.scheme, ignoreCase = true)){
@@ -132,7 +132,7 @@ class Scan : AppCompatActivity() {
             OPERATION_CAPTURE_PHOTO ->
                 if (resultCode == Activity.RESULT_OK) {
                     val bitmap = BitmapFactory.decodeStream(
-                        getContentResolver().openInputStream(mUri))
+                        getContentResolver().openInputStream(mUri!!))
                     mImageView!!.setImageBitmap(bitmap)
                 }
             OPERATION_CHOOSE_PHOTO ->

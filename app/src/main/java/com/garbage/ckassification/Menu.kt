@@ -26,10 +26,10 @@ class Menu : AppCompatActivity() {
             finish()
         }
         wikipedia.setOnClickListener {
-                intent = Intent(Intent.ACTION_VIEW)
-                intent.setData(Uri.parse("https://id.wikipedia.org/wiki/Sampah" ))
-                startActivity(intent)
-                finish()
+            intent = Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse("https://id.wikipedia.org/wiki/Sampah" ))
+            startActivity(intent)
+            finish()
 
         }
     }

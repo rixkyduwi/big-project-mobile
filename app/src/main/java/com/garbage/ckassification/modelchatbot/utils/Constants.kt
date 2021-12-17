@@ -1,7 +1,6 @@
-package com.codepalace.chatbot.utils
+package com.garbage.ckassification.modelchatbot.utils
 
 object Constants {
-
     const val SEND_ID = "SEND_ID"
     const val RECEIVE_ID = "RECEIVE_ID"
 

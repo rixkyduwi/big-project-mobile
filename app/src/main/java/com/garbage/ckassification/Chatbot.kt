@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import ccom.garbage.classification.modelchatbot.APIService
-import ccom.garbage.classification.modelchatbot.ChatResponse
-import com.garbage.ckassification.modelchatbot.AdapterChatBot
+import com.garbage.ckassification.modelchatbot.APIService
+import com.garbage.ckassification.modelchatbot.ChatResponse
+import com.garbage.ckassification.modelchatbot.AdapterChatbot
 import com.garbage.ckassification.modelchatbot.ChatModel
 import kotlinx.android.synthetic.main.chatbot.*
 import retrofit2.Call
@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 class Chatbot : AppCompatActivity() {
-    private val adapterChatBot = AdapterChatBot()
+    private val adapterChatBot = AdapterChatbot()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.scan)

@@ -10,12 +10,12 @@ class Register : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.register)
 
-        btn_register.setOnClickListener {
-            val name = etname.text.toString()
-            val norumah = etnorumah.text.toString()
-            val kontak = etkontak.text.toString()
+        btnRegister.setOnClickListener {
+            val name = etEmail.text.toString()
+            val norumah = etName.text.toString()
+            val kontak = etKontak.text.toString()
             val person = Modeluser(name, norumah, kontak)
-            Intent(this, Profiluser::class.java).also {
+            Intent(this, Profileuser::class.java).also {
                 it.putExtra("Extra_name", name)
                 it.putExtra("Extra_norumah", norumah)
                 it.putExtra("Extra_kontak", kontak)
@@ -26,4 +26,4 @@ class Register : AppCompatActivity() {
         }
 
     }
-    }
+}

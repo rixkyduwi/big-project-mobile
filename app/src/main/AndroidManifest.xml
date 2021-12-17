@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <dist:module dist:instant="true" />
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -14,6 +13,7 @@
         android:theme="@style/Widget.MaterialComponents.TabLayout">
         <activity
             android:name="com.garbage.ckassification.Splashscreen"
+            android:label="welcome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             android:name="com.garbage.ckassification.Register"
             android:exported="true"/>
         <activity
-            android:name="com.garbage.ckassification.Profiluser"
+            android:name="com.garbage.ckassification.Profileuser"
             android:exported="true"/>
         <activity
             android:name="com.garbage.ckassification.Menu"
