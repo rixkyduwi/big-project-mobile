@@ -1,4 +1,4 @@
-package com.garbage.classification
+package com.garbage.ckassification
 
 import org.junit.Test
 

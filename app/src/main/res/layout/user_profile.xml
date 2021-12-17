@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/profiluser"
@@ -25,9 +26,10 @@
         android:hint="Username"
         android:textSize="50dp"
         android:textStyle="bold"
+        android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="@id/profilnorumah"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintHorizontal_bias="0.460"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/image" />
 
@@ -35,9 +37,9 @@
         android:id="@+id/profilnorumah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/righteous_regular"
         android:hint="A 12"
+        android:layout_marginTop="15dp"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/profilkontak"
@@ -49,10 +51,9 @@
         android:id="@+id/profilkontak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/righteous_regular"
         android:hint="08953601075"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/logout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,8 +66,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/btn_rectangle"
-        android:text="log out"
-        android:textSize="20dp"
+        android:text="@string/log_out"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

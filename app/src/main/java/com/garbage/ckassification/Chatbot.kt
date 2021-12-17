@@ -1,4 +1,4 @@
-package com.garbage.classification
+package com.garbage.ckassification
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import ccom.garbage.classification.modelchatbot.APIService
 import ccom.garbage.classification.modelchatbot.ChatResponse
-import com.garbage.classification.modelchatbot.AdapterChatBot
-import com.garbage.classification.modelchatbot.ChatModel
+import com.garbage.ckassification.modelchatbot.AdapterChatBot
+import com.garbage.ckassification.modelchatbot.ChatModel
 import kotlinx.android.synthetic.main.chatbot.*
 import retrofit2.Call
 import retrofit2.Callback

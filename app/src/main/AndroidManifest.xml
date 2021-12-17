@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.garbage.classification">
+    package="com.garbage.ckassification">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <dist:module dist:instant="true" />
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Widget.MaterialComponents.TabLayout">
         <activity
-            android:name="com.garbage.classification.Splashscreen"
+            android:name="com.garbage.ckassification.Splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,22 +22,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.garbage.classification.Login"
+            android:name="com.garbage.ckassification.Login"
             android:exported="true"/>
         <activity
-            android:name="com.garbage.classification.Register"
+            android:name="com.garbage.ckassification.Register"
             android:exported="true"/>
         <activity
-            android:name="com.garbage.classification.Profiluser"
+            android:name="com.garbage.ckassification.Profiluser"
             android:exported="true"/>
         <activity
-            android:name="com.garbage.classification.Menu"
+            android:name="com.garbage.ckassification.Menu"
             android:exported="true"/>
         <activity
-            android:name="com.garbage.classification.Scan"
+            android:name="com.garbage.ckassification.Scan"
             android:exported="true"/>
         <activity
-            android:name="com.garbage.classification.Chatbot"
+            android:name="com.garbage.ckassification.Chatbot"
             android:exported="true"/>
         <provider
             android:authorities="${applicationId}.fileprovider"

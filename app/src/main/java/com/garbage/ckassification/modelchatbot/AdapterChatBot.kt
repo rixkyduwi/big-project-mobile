@@ -1,10 +1,10 @@
-package com.garbage.classification.modelchatbot
+package com.garbage.ckassification.modelchatbot
 
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.garbage.classification.R
+import com.garbage.ckassification.R
 import kotlinx.android.synthetic.main.listitem_chat.view.*
 
 class AdapterChatBot : RecyclerView.Adapter<AdapterChatBot.MyViewHolder>() {

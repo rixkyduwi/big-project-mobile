@@ -1,4 +1,4 @@
-package com.garbage.classification
+package com.garbage.ckassification
 
 import android.content.Intent
 import android.net.Uri
@@ -18,11 +18,11 @@ class Menu : AppCompatActivity() {
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         scan.setOnClickListener {
-            startActivity(Intent(this, com.garbage.classification.Scan::class.java))
+            startActivity(Intent(this, com.garbage.ckassification.Scan::class.java))
             finish()
         }
         chatbot.setOnClickListener {
-            startActivity(Intent(this, com.garbage.classification.Chatbot::class.java))
+            startActivity(Intent(this, com.garbage.ckassification.Chatbot::class.java))
             finish()
         }
         wikipedia.setOnClickListener {

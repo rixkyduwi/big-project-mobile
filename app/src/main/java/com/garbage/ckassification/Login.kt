@@ -1,10 +1,9 @@
-package com.garbage.classification
+package com.garbage.ckassification
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.login.*
-import kotlinx.android.synthetic.main.register.*
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

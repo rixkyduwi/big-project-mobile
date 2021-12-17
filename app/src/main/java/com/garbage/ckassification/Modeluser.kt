@@ -1,9 +1,8 @@
-package com.garbage.classification
-
+package com.garbage.ckassification
 import java.io.Serializable
 
-data class Login_user (
+data class Modeluser (
     val name: String,
     val norumah : String,
     val kontak : String,
-) : Serializable
+) :Serializable

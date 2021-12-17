@@ -1,4 +1,4 @@
-package com.garbage.classification
+package com.garbage.ckassification
 
 import android.content.Intent
 import android.os.Bundle
