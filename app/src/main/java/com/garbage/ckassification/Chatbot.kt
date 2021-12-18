@@ -22,6 +22,9 @@ class Chatbot : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.scan)
 
+        getSupportActionBar()!!.setDisplayShowHomeEnabled(true);
+        getSupportActionBar()!!.setLogo(R.drawable.icon);
+        getSupportActionBar()!!.setDisplayUseLogoEnabled(true);
         val retrofit = Retrofit.Builder()
             .baseUrl("http://192.168.8.100:5000/")
             .addConverterFactory(GsonConverterFactory.create())

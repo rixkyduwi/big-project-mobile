@@ -6,7 +6,7 @@
     android:gravity="center|top">
         <TextView
             android:id="@+id/headerTxt"
-            android:text="Camera and ImagePicker Tutorial"
+            android:text="pilih gambar yang akan di scan"
             android:background="@color/colorAccent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +22,6 @@
             android:gravity="center"
             android:background="@android:color/darker_gray"
             android:orientation="vertical">
-
 
             <ImageView
                 android:id="@+id/mImageView"
@@ -42,7 +41,7 @@
                 android:layout_width="0dp"
                 android:layout_height="45dp"
                 android:padding="5dp"
-                android:text="Capture"
+                android:text="ambil gambar"
                 android:layout_marginTop="10dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/btn_rectangle"
@@ -53,10 +52,24 @@
                 android:layout_width="0dp"
                 android:layout_height="45dp"
                 android:padding="5dp"
-                android:text="Choose"
+                android:text="pilih gambar dari galery"
                 android:layout_marginTop="10dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/btn_rectangle"
                 android:id="@+id/btnChoose"/>
+
         </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:text="kirim"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_rectangle"
+        android:id="@+id/btkirim"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="oragnaik : 80%"/>
 </LinearLayout>

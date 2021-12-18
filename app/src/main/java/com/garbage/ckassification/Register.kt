@@ -9,7 +9,9 @@ class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.register)
-
+        getSupportActionBar()!!.setDisplayShowHomeEnabled(true);
+        getSupportActionBar()!!.setLogo(R.drawable.icon);
+        getSupportActionBar()!!.setDisplayUseLogoEnabled(true);
         btnRegister.setOnClickListener {
             val name = etEmail.text.toString()
             val norumah = etName.text.toString()

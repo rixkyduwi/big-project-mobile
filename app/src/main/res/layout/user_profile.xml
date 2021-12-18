@@ -9,14 +9,14 @@
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
+        android:contentDescription="TODO"
         android:src="@drawable/user"
-        app:layout_constraintBottom_toBottomOf="@id/profiluser"
+        app:layout_constraintBottom_toTopOf="@+id/profiluser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="TODO"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/profiluser"
@@ -26,12 +26,10 @@
         android:hint="Username"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:layout_marginTop="200dp"
-        app:layout_constraintBottom_toBottomOf="@id/profilnorumah"
+        app:layout_constraintTop_toBottomOf="@id/image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.460"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/image" />
+        app:layout_constraintBottom_toTopOf="@+id/profilnorumah"/>
 
     <TextView
         android:id="@+id/profilnorumah"
@@ -39,13 +37,12 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/righteous_regular"
         android:hint="A 12"
-        android:layout_marginTop="15dp"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/profilkontak"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/profiluser" />
+        app:layout_constraintTop_toBottomOf="@+id/profiluser" />
 
     <TextView
         android:id="@+id/profilkontak"
@@ -57,6 +54,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/logout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/profilnorumah" />
 

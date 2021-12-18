@@ -10,11 +10,6 @@ class Splashscreen: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splashscreen)
-        //actionbar
-        val actionbar = supportActionBar
-        //set actionbar title
-        actionbar!!.title = "   Username"
-        actionbar.setDisplayShowTitleEnabled(false)
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(
                 Intent(

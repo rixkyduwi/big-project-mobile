@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.garbage.ckassification">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
     <dist:module dist:instant="true" />
     <application
         android:icon="@mipmap/ic_launcher"
@@ -13,8 +16,8 @@
         android:theme="@style/Widget.MaterialComponents.TabLayout">
         <activity
             android:name="com.garbage.ckassification.Splashscreen"
-            android:label="welcome"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,31 +26,33 @@
         </activity>
         <activity
             android:name="com.garbage.ckassification.Login"
-            android:exported="true"/>
+            android:exported="true"
+            android:label="welcome"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name="com.garbage.ckassification.Register"
-            android:exported="true"/>
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name="com.garbage.ckassification.Profileuser"
-            android:exported="true"/>
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name="com.garbage.ckassification.Menu"
-            android:exported="true"/>
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name="com.garbage.ckassification.Scan"
-            android:exported="true"/>
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name="com.garbage.ckassification.Chatbot"
-            android:exported="true"/>
-        <provider
-            android:authorities="${applicationId}.fileprovider"
-            android:name="androidx.core.content.FileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+        <activity
+        android:name="com.garbage.ckassification.wiki"
+        android:exported="true"
+        android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
